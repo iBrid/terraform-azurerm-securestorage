@@ -15,11 +15,6 @@ locals {
   }
 }
 
-resource "azurerm_resource_group" "rg" {
-    name = "MyTrainingLab2"
-    location = "West US 2"
-}
-
 resource "azurerm_storage_account" "securestorage" {
   resource_group_name = var.resource_group_name
   location = var.location
